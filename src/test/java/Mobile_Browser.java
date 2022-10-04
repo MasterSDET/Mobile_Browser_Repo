@@ -28,26 +28,24 @@ import io.appium.java_client.service.local.AppiumServiceBuilder;
 public static AndroidDriver driver;
 
 
-@BeforeClass
+@Test
 public void Mobile_Google_Chrome_Base_File () throws MalformedURLException
 {		
 	
 	
 	UiAutomator2Options options = new UiAutomator2Options();
-	options.setDeviceName("Test_Device2");
-	options.setUdid("RZ8R22L5RQV");
-	options.setPlatformName("Android");
-	options.setPlatformVersion("12");
-	options.setChromedriverExecutable("//Users//mohitgaur//Downloads//chromedriver");
-	options.setAppPackage("com.androidsample.generalstore");
-	options.setAppActivity("com.androidsample.generalstore.SplashActivity");
+	options.setDeviceName("Sumsung");
+	options.setChromedriverExecutable("//Users//mohitgaur//Downloads//chromedriver 6");
+	options.setCapability("browserName", "Chrome");
+    //options.setAppPackage("com.android.chrome");
+	//options.setAppActivity("com.google.android.apps.chrome.Main");
 	
 
 	 driver =  new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub/"), options);
-//bhv
+
 
 }
-
+/*
 public static void swipeaction(WebElement ele, String direction)
 {
 	
@@ -117,6 +115,7 @@ public void tearDown()
  
     
 	}
+	*/
 
 	
 }
