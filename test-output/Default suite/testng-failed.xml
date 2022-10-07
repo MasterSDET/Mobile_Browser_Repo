@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Mobile_Browser">
+      <class name="Mobile_Browser_TC_01">
         <methods>
+          <include name="tearDown"/>
           <include name="Mobile_Google_Chrome_Base_File"/>
+          <include name="Browser_TC01"/>
         </methods>
-      </class> <!-- Mobile_Browser -->
+      </class> <!-- Mobile_Browser_TC_01 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
